@@ -25,7 +25,7 @@ command(
         `https://api.thexapi.xyz/api/v1/download/youtube/audio?url=${match}`
       )
     ).data;
-    await message.reply(`_Downloading ${title}_`);
+    await message.reply(`_Downloading ${title}_ \n\n >©ᴄʀᴇᴀᴛᴇᴅ ʙʏ Asᴍᴏᴅᴇᴜs Eᴘᴢɪ 🧑🏻‍💻`);
     let buff = await getBuffer(dlink);
     return await message.sendMessage(
       message.jid,
@@ -70,7 +70,7 @@ command(
     let response = (await getJson(requrl)).data;
     const { dlink, title } = response;
     console.log(response);
-    await message.reply(`_Downloading ${title}_`);
+    await message.reply(`_Downloading ${title}_ \n\n >©ᴄʀᴇᴀᴛᴇᴅ ʙʏ Asᴍᴏᴅᴇᴜs Eᴘᴢɪ 🧑🏻‍💻`);
     return await message.sendMessage(
       message.jid,
       dlink,
@@ -93,7 +93,7 @@ command(
     match = match || message.reply_message.text;
     if (!match) return await message.reply("Give me a query");
     let { dlink, title } = await ytsdl(match);
-    await message.reply(`_Downloading ${title}_`);
+    await message.reply(`_Downloading ${title}_ \n\n >©ᴄʀᴇᴀᴛᴇᴅ ʙʏ Asᴍᴏᴅᴇᴜs Eᴘᴢɪ 🧑🏻‍💻`);
     let buff = await getBuffer(dlink);
     return await message.sendMessage(
       message.jid,
@@ -117,7 +117,7 @@ command(
     match = match || message.reply_message.text;
     if (!match) return await message.reply("Give me a query");
     let { dlink, title } = await ytsdl(match, "video");
-    await message.reply(`_Downloading ${title}_`);
+    await message.reply(`_Downloading ${title}_ \n\n >©ᴄʀᴇᴀᴛᴇᴅ ʙʏ Asᴍᴏᴅᴇᴜs Eᴘᴢɪ 🧑🏻‍💻`);
     return await message.sendMessage(
       message.jid,
       dlink,
