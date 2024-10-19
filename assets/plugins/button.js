@@ -2,7 +2,7 @@ const { command, isPrivate } = require("../../lib");
 
 command(
   {
-    pattern: "button",
+    pattern: "epzi",
     fromMe: true,
     desc: "send a button message",
     usage: "#button",
@@ -15,15 +15,15 @@ command(
         {
           type: "list",
           params: {
-            title: "Button 1",
+            title: "Epzi ~ List",
             sections: [
               {
-                title: "Button 1",
+                title: "Epzi ~ Menu",
                 rows: [
                   {
-                    header: "title",
-                    title: "Button 1",
-                    description: "Description 1",
+                    header: "Epzi Menu",
+                    title: "Menu",
+                    description: "Tap Here For Menu",
                     id: "#menu",
                   },
                 ],
@@ -39,18 +39,19 @@ command(
           },
         },
         {
-          type: "url",
+          type: "link",
           params: {
-            display_text: "Neeraj-x0",
-            url: "https://www.neerajx0.xyz/",
-            merchant_url: "https://www.neerajx0.xyz/",
+            display_text: "Github: Epzi",
+            url: "https://github.com/HaCkr-EPZI-public/CuduNona/",
+            merchant_url: "https://github.com/HaCkr-EPZI-public/",
           },
         },
         {
-          type: "address",
+          type: "insta",
           params: {
-            display_text: "Address",
-            id: "message",
+            display_text: "Insta: Epzi",
+            url: "https://www.instagram.com/yuren.sasanka",
+            merchant_url: "https://www.instagram.com/yuren.sasanka",
           },
         },
         {
@@ -61,7 +62,7 @@ command(
           type: "copy",
           params: {
             display_text: "copy",
-            id: "123456789",
+            id: "+94759554531",
             copy_code: "message",
           },
         },
@@ -69,17 +70,17 @@ command(
           type: "call",
           params: {
             display_text: "Call",
-            phone_number: "123456789",
+            phone_number: "+94759554531",
           },
         },
       ],
       header: {
-        title: "X-Asena",
+        title: "Epzi-V2",
         subtitle: "WhatsApp Bot",
         hasMediaAttachment: false,
       },
       footer: {
-        text: "Interactive Native Flow Message",
+        text: ">By Queen D ~ Epzi-V2",
       },
       body: {
         text: "Interactive Message",
